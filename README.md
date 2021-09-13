@@ -1,8 +1,8 @@
 # Proyecto Ciclo3_Mintic
 
 ## Integrantes
-- Juliana
-- Sebastian
-- Jesus
-- Milena
+- Juliana Cano
+- Sebastian Oviedo
+- Jesus Camargo
+- Milena Moscoso
 - Lorena Vera
