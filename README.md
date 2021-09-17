@@ -2,7 +2,7 @@
 
 ## Integrantes
 - Juliana Cano
-- Sebastian Oviedo
+- Sebastian Oviedo e-mail:sebastianoviedo_2658@hotmail.com
 - Jesus Camargo
-- Milena Moscoso
+- Milena moscoso Carvajal  cc: 1106454634  e-mail: 
 - Lorena Vera
