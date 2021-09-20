@@ -19,7 +19,9 @@ input{
 }
 
 div{
-    display: block;
+    position: absolute;
+    top: 5cm;
+    left: 2cm;
 }
 #primer{
     width: 50%;    
@@ -28,9 +30,10 @@ div{
     width: 910px;
 }
 .Cajas{
+    position: absolute;
+    left: 25cm;
     float: right;
-    width: 400px;
-    padding: 30px;
+    
 }
 #registrar{
     margin-top: 0.5cm;
