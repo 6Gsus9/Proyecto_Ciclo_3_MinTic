@@ -1,0 +1,41 @@
+li{
+    float: left;
+    list-style: none;
+    padding: 20px;
+}
+nav{
+    float: right;
+    
+    
+}
+a{
+    text-decoration: none;
+}
+input{
+    float: left;
+    margin-top: 20px;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+div{
+    position: absolute;
+    top: 5cm;
+    left: 2cm;
+}
+#primer{
+    width: 50%;    
+}
+.contenedor1{
+    width: 910px;
+}
+.Cajas{
+    position: absolute;
+    left: 25cm;
+    float: right;
+    
+}
+#registrar{
+    margin-top: 0.5cm;
+    margin-left: 3.5cm;
+}
