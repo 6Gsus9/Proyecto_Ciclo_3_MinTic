@@ -1,0 +1,40 @@
+*{
+    text-align: center;
+}
+body{
+    font-family: Arial;
+    background-image: url('/img/puntos.png');
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+hr {
+    height: 5px;
+    background-color: orangered;
+}
+.form-login{
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    margin-top: 0;
+}
+.controles {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.recordar{
+    margin-bottom: 17px;
+}
+.boton {
+    background-color: orangered;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
