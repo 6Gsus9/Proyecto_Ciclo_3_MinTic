@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' href='..\img\Logo.png' type='image/x-icon' sizes="16x16" />
+
+    <!-- ================== ESTILOS CSS ================== -->
+    <link href="../CSS/estilos.css" rel="stylesheet"/>
+    <link href="../plugins\bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+        <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+        <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />    
+    <link href="../plugins/DataTables-1.10.22/css/jquery.dataTables.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    
+    <!-- ================== SCRIPTS JS ================== -->
+    <script src="../plugins/jQuery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="../plugins\bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js" ></script>
+
+    <title>Registro estudiantes</title>
+</head>
+
+<body style="background-color: rgb(219, 219,219)">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="../HTML\index.html">
+                <img class='icon' type="image" id="saveform" src="../img/Logo.png" loading="lazy" />
+                <h2 style="font-size: 1.2cm; font-style: italic;">Tutoweb</h2>
+                <a class="navbar-brand" href="../HTML\quienes_somos.html" style="margin-left: 3%;">Quienes somos</a>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="position: absolute; right: 2cm; ">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <a class="navbar-brand" href="../HTML\regitro_tutores.html" id=""> Trabaja con nosotros </a>
+                    <a class="nav-link" href="../HTML\Ingreso.html" id=""> Ingresa </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>TutoWeb</h2>
+                <h2>¡El mejor aliado para estudiar!</h2>
+
+                <p id="primer">
+                    Aprende o profundiza en los temas que mas te interesen y conviértete en
+                    un experto. Encontrarás los mejores profesores para que te sientas
+                    seguro y cómodo.
+                </p>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"> Primer Nombre</label>
+                    <input type="text" class="form-control" name="Pnombre" id="Pnombre" /><br />
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"> Segundo Nombre</label>
+                    <input type="text" class="form-control" name="Snombre" id="Snombre" /><br />
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"> Apellidos</label>
+                    <input type="text" class="form-control" name="Apellidos" id="Apellidos" /><br />
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"> correo</label>
+                    <input type="email" class="form-control" name="Pnombre" id="Pnombre" /><br />
+                </div>
+
+                <button id="registrar" >Registrar</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
