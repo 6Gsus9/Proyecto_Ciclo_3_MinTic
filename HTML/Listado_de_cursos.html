@@ -1,184 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='shortcut icon' href='..\img\Logo.png' type='image/x-icon' sizes="16x16" />
-    
-    <!-- ================== ESTILOS CSS ================== -->
-    <link href="../CSS/estilos.css" rel="stylesheet"/>
-    <link href="../plugins\bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+        <link rel='shortcut icon' href='..\img\Logo.png' type='image/x-icon' sizes="16x16" />
+        <!-- ================== ESTILOS CSS ================== -->
+        <link href="../CSS/estilos.css" rel="stylesheet" />
         <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
-        <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+        <!-- Google Fonts Roboto -->
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+        />
         <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />    
-    <link href="../plugins/DataTables-1.10.22/css/jquery.dataTables.min.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    
-    <!-- ================== SCRIPTS JS ================== -->
-    <script src="../plugins/jQuery-3.3.1/jquery-3.3.1.min.js"></script>
-    <script src="../plugins\bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <!-- MDB -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js" ></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">    
 
-    <title>Cursos</title>
-</head>
-<body style="background-color: rgba(236, 236, 236, 0.733)">
-    <nav class="navbar navbar-light bg-light navbar-expand-sm justify-content-between">
-        <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="../HTML/index.html">
-            <input class='icon' type="image" id="saveform" src="../img/Logo.png" loading="lazy" />
-        </a>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="../HTML\quienes_somos.html" style="margin-left: 1%; margin-right: 1%;">Quienes
-                somos</a>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item dropdown mt-1" style="margin-left: 7%;">
-                    <a class="navbar-brand dropdown-toggle" href="../HTML\Listado_de_cursos.html"
-                        id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Cómo funciona
+        <!-- ================== SCRIPTS JS ================== -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- MDB -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+
+        <title>Cursos</title>
+    </head>
+    <body style="background-color: rgba(236, 236, 236, 0.733)">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../HTML/index.html">
+                        <input class='icon' type="image" id="saveform" src="../img/Logo.png" loading="lazy" />
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="../HTML\Listado_de_cursos.html">Action_1</a>
-                        <a class="dropdown-item" href="../HTML\Listado_de_cursos.html">Action_2</a>
-                        <a class="dropdown-item" href="../HTML\Listado_de_cursos.html">Action_3</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-1">
+                            <li class="nav-item mt-1 mx-5">
+                                <a class="navbar-brand h1" aria-current="page" href="../HTML\quienes_somos.html">Quienes
+                                somos</a>
+                            </li>
+                            <li class="nav-item dropdown mt-1 mx-5">
+                                <a class="navbar-brand dropdown-toggle h1" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    Cómo funciona
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../HTML\Listado_de_cursos.html">Agendar una tutoria</a></li>
+                                    <li><a class="dropdown-item" href="../HTML\Listado_de_cursos.html">Cambiar el horario de la tutoria</a></li>
+                                    <li><a class="dropdown-item" href="../HTML\Listado_de_cursos.html">Realizar la subscripción</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="form-inline d-flex mx-5 mt-1">
+                            <input class="form-control me-2" type="search" placeholder="¿Qué deseas aprender?" aria-label="Search" style="width:450px;">
+                            <a href="../HTML\Listado_de_cursos.html">
+                                <button type="button" class="btn btn-primary">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </a>
+                        </form>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-1">
+                            <li class="nav-item mx-5 me-2">
+                                <a class="navbar-brand h1" aria-current="page" href="../HTML\regitro_tutores.html"> Trabaja con
+                                nosotros </a>
+                            </li>
+                            <ul class="navbar-nav mx-5">
+                            <li class="nav-item mx-1">
+                                <a href="../HTML\Ingreso.html"> 
+                                    <button type="button" class="btn btn-outline-primary me-2">Ingresa </button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../HTML\regitro_estudiante.html">
+                                    <button type="button" class="btn btn-warning me-2">Registrate es gratis</button>
+                                </a>
+                            </li>
+                            </ul>
+                        </ul>
                     </div>
-                </li>
-                <form class="form-inline col-auto" style="margin-left: 15%;" action="">
-                    <input class="form-control mr-sm-2" type="search" placeholder="¿Qué deseas aprender?"
-                        aria-label="Search" style="width:350px;">
-                    <a href="../HTML\Listado_de_cursos.html"><button type="button" class="btn btn-primary">
-                        <i class="fas fa-search"></i>
-                    </button></a>
-                </form>
-                <a class="navbar-brand" href="../HTML\regitro_tutores.html" id="" style="margin-left: 7%;"> Trabaja con
-                    nosotros </a>
-                <a class="navbar-brand" href="../HTML\Ingreso.html" id="" style="margin-left: 7%;"> Ingresa </a>
-                <a href="../HTML\regitro_estudiante.html">
-                    <button type="button" class="btn btn-warning ms-3" style="margin-left: 7%;">Registrate es gratis</button>
-                </a>
-            </ul>
-        </div>
-    </nav>
-    <div class="row d-flex justify-content-center" style="margin: 1%;">
-        <div class="col-12 d-flex justify-content-left">
-            <div class="col-8">
-                <h1>Busca el tema de la tutoría que deseas</h1>
-                <p>Elige la materia en la que necesitas ayuda y programa la totoria cuando quieras</p>
-            </div>
-        </div>
-    </div>
-    <div class="row d-flex justify-content-center" style="margin: 1%;">
-        <div class="col-12 d-flex justify-content-left ">
-            <div class="col-auto" >
-                <form class="form-inline"  action="">
-                    <input class="form-control mr-sm-1" type="search" placeholder="¿Qué deseas aprender?"
-                        aria-label="Search" style="width:600px;">
-                    <a href=""><button type="button" class="btn btn-primary mr-sm-1">
-                        <i class="fas fa-search"></i>
-                    </button></a>
-                    <a href=""><button type="button" class="btn btn-info">
-                        <i class="fas fa-filter"></i>
-                    </button></a>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="row d-flex justify-content-center bgpuntos" style="margin: 1%;">
-        <div class="row m-3">
-            <div class="col-12 d-flex justify-content-center" style="background-color: rgb(223, 223, 223);">
-                <div class="col-10">
-                    <h1>Titulo del curso 1</h1>
-                    <p>explicación de curso 1: Aliquip ullamco in est laboris commodo. Non qui minim voluptate laborum id esse ipsum incididunt tempor cupidatat magna. Ad nulla minim ex voluptate ipsum do laborum deserunt exercitation pariatur pariatur dolore.</p>
                 </div>
-                <div class="col-2 d-flex justify-content-end">
-                    <form class="col-auto text-center">
-                        <div class="align-self-center m-3">
-                        <a href=""><button type="button" class="btn btn-warning">
-                            Programar tutoria <i class="far fa-calendar-alt fa-lg"></i>
-                        </button></a>
-                        </div>
-                        <div class="align-self-center m-3">
-                        <a href=""><button type="button" class="btn" style="background-color: rgb(255, 255, 255);">
-                            Ver mas <i class="fas fa-plus"></i>
-                        </button></a>
-                        </div>
-                    </form>  
+            </nav>
+        </header>
+        <main>
+            <div class="row d-flex justify-content-center" style="margin: 1%;">
+                <div class="col-12 d-flex justify-content-left">
+                    <div class="col-8">
+                        <h1>Busca el tema de la tutoría que deseas</h1>
+                        <p>Elige la materia en la que necesitas ayuda y programa la totoria cuando quieras</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row m-3">
-            <div class="col-12 d-flex justify-content-center" style="background-color: rgb(223, 223, 223);">
-                <div class="col-10">
-                    <h1>Titulo del curso 2</h1>
-                    <p>explicación de curso 2: Aliquip ullamco in est laboris commodo. Non qui minim voluptate laborum id esse ipsum incididunt tempor cupidatat magna. Ad nulla minim ex voluptate ipsum do laborum deserunt exercitation pariatur pariatur dolore.</p>
-                </div>
-                <div class="col-2 d-flex justify-content-end">
-                    <form class="col-auto text-center">
-                        <div class="align-self-center m-3">
-                        <a href=""><button type="button" class="btn btn-warning">
-                            Programar tutoria <i class="far fa-calendar-alt fa-lg"></i>
-                        </button></a>
-                        </div>
-                        <div class="align-self-center m-3">
-                        <a href=""><button type="button" class="btn" style="background-color: rgb(255, 255, 255);">
-                            Ver mas <i class="fas fa-plus"></i>
-                        </button></a>
-                        </div>
-                    </form>  
+            <div class="row d-flex justify-content-center" style="margin: 1%;">
+                <div class="col-12 d-flex justify-content-left ">
+                    <div class="col-auto" >
+                        <form class="form-inline d-flex mx-5 mt-1"  action="">
+                            <input class="form-control me-2" type="search" placeholder="¿Qué deseas aprender?"
+                                aria-label="Search" style="width:600px;">
+                            <a href=""><button type="button" class="btn btn-primary me-2">
+                                <i class="fas fa-search"></i>
+                            </button></a>
+                            <a href=""><button type="button" class="btn btn-info me-2">
+                                <i class="fas fa-filter"></i>
+                            </button></a>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row m-3">
-            <div class="col-12 d-flex justify-content-center" style="background-color: rgb(223, 223, 223);">
-                <div class="col-10">
-                    <h1>Titulo del curso 3</h1>
-                    <p>explicación de curso 3: Aliquip ullamco in est laboris commodo. Non qui minim voluptate laborum id esse ipsum incididunt tempor cupidatat magna. Ad nulla minim ex voluptate ipsum do laborum deserunt exercitation pariatur pariatur dolore.</p>
+            <div class="row d-flex justify-content-center bgpuntos" style="margin: 1%;">
+                <div class="row m-3">
+                    <div class="col-12 d-flex justify-content-center" style="background-color: rgb(223, 223, 223);">
+                        <div class="col-10">
+                            <h1>Titulo del curso 1</h1>
+                            <p>explicación de curso 1: Aliquip ullamco in est laboris commodo. Non qui minim voluptate laborum id esse ipsum incididunt tempor cupidatat magna. Ad nulla minim ex voluptate ipsum do laborum deserunt exercitation pariatur pariatur dolore.</p>
+                        </div>
+                        <div class="col-2 d-flex justify-content-end">
+                            <form class="col-auto text-center">
+                                <div class="align-self-center m-3">
+                                <a href=""><button type="button" class="btn btn-warning">
+                                    Programar tutoria <i class="far fa-calendar-alt fa-lg"></i>
+                                </button></a>
+                                </div>
+                                <div class="align-self-center m-3">
+                                <a href=""><button type="button" class="btn" style="background-color: rgb(255, 255, 255);">
+                                    Ver mas <i class="fas fa-plus"></i>
+                                </button></a>
+                                </div>
+                            </form>  
+                        </div>
+                    </div>
                 </div>
-                <div class="col-2 d-flex justify-content-end">
-                    <form class="col-auto text-center">
-                        <div class="align-self-center m-3">
-                        <a href=""><button type="button" class="btn btn-warning">
-                            Programar tutoria <i class="far fa-calendar-alt fa-lg"></i>
-                        </button></a>
+                <div class="row m-3">
+                    <div class="col-12 d-flex justify-content-center" style="background-color: rgb(223, 223, 223);">
+                        <div class="col-10">
+                            <h1>Titulo del curso 2</h1>
+                            <p>explicación de curso 2: Aliquip ullamco in est laboris commodo. Non qui minim voluptate laborum id esse ipsum incididunt tempor cupidatat magna. Ad nulla minim ex voluptate ipsum do laborum deserunt exercitation pariatur pariatur dolore.</p>
                         </div>
-                        <div class="align-self-center m-3">
-                        <a href=""><button type="button" class="btn" style="background-color: rgb(255, 255, 255);">
-                            Ver mas <i class="fas fa-plus"></i>
-                        </button></a>
+                        <div class="col-2 d-flex justify-content-end">
+                            <form class="col-auto text-center">
+                                <div class="align-self-center m-3">
+                                <a href=""><button type="button" class="btn btn-warning">
+                                    Programar tutoria <i class="far fa-calendar-alt fa-lg"></i>
+                                </button></a>
+                                </div>
+                                <div class="align-self-center m-3">
+                                <a href=""><button type="button" class="btn" style="background-color: rgb(255, 255, 255);">
+                                    Ver mas <i class="fas fa-plus"></i>
+                                </button></a>
+                                </div>
+                            </form>  
                         </div>
-                    </form>  
+                    </div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-12 d-flex justify-content-center" style="background-color: rgb(223, 223, 223);">
+                        <div class="col-10">
+                            <h1>Titulo del curso 3</h1>
+                            <p>explicación de curso 3: Aliquip ullamco in est laboris commodo. Non qui minim voluptate laborum id esse ipsum incididunt tempor cupidatat magna. Ad nulla minim ex voluptate ipsum do laborum deserunt exercitation pariatur pariatur dolore.</p>
+                        </div>
+                        <div class="col-2 d-flex justify-content-end">
+                            <form class="col-auto text-center">
+                                <div class="align-self-center m-3">
+                                <a href=""><button type="button" class="btn btn-warning">
+                                    Programar tutoria <i class="far fa-calendar-alt fa-lg"></i>
+                                </button></a>
+                                </div>
+                                <div class="align-self-center m-3">
+                                <a href=""><button type="button" class="btn" style="background-color: rgb(255, 255, 255);">
+                                    Ver mas <i class="fas fa-plus"></i>
+                                </button></a>
+                                </div>
+                            </form>  
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-12 d-flex justify-content-center" style="background-color: rgb(223, 223, 223);">
+                        <div class="col-10">
+                            <h1>Titulo del curso 4</h1>
+                            <p>explicación de curso 4 Aliquip ullamco in est laboris commodo. Non qui minim voluptate laborum id esse ipsum incididunt tempor cupidatat magna. Ad nulla minim ex voluptate ipsum do laborum deserunt exercitation pariatur pariatur dolore.</p>
+                        </div>
+                        <div class="col-2 d-flex justify-content-end">
+                            <form class="col-auto text-center">
+                                <div class="align-self-center m-3">
+                                <a href=""><button type="button" class="btn btn-warning">
+                                    Programar tutoria <i class="far fa-calendar-alt fa-lg"></i>
+                                </button></a>
+                                </div>
+                                <div class="align-self-center m-3">
+                                <a href=""><button type="button" class="btn" style="background-color: rgb(255, 255, 255);">
+                                    Ver mas <i class="fas fa-plus"></i>
+                                </button></a>
+                                </div>
+                            </form>  
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row m-3">
-            <div class="col-12 d-flex justify-content-center" style="background-color: rgb(223, 223, 223);">
-                <div class="col-10">
-                    <h1>Titulo del curso 4</h1>
-                    <p>explicación de curso 4 Aliquip ullamco in est laboris commodo. Non qui minim voluptate laborum id esse ipsum incididunt tempor cupidatat magna. Ad nulla minim ex voluptate ipsum do laborum deserunt exercitation pariatur pariatur dolore.</p>
-                </div>
-                <div class="col-2 d-flex justify-content-end">
-                    <form class="col-auto text-center">
-                        <div class="align-self-center m-3">
-                        <a href=""><button type="button" class="btn btn-warning">
-                            Programar tutoria <i class="far fa-calendar-alt fa-lg"></i>
-                        </button></a>
-                        </div>
-                        <div class="align-self-center m-3">
-                        <a href=""><button type="button" class="btn" style="background-color: rgb(255, 255, 255);">
-                            Ver mas <i class="fas fa-plus"></i>
-                        </button></a>
-                        </div>
-                    </form>  
-                </div>
-            </div>
-        </div>
-    </div>  
-</body>
+        </main>
+    </body>
 </html>
