@@ -4,3 +4,7 @@
     display: block;
     margin-top: 2px;
 }
+
+.bgpuntos{
+    background-image: url('../img/puntos.png');
+}
