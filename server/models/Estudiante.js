@@ -13,8 +13,7 @@ const EstudianteSchema = new Schema({
     active:{type:Boolean, default:true}
 });
 
-// schema de clases programadas
-// nombreCurso, fecha, Hora Inicio, hora Final
+
 
 
 //Convertir a modelo
@@ -22,4 +21,5 @@ const EstudianteSchema = new Schema({
 const Estudiantes= Mongoose.model('Estudiantes',EstudianteSchema)
 
 export default Estudiantes;
+
 
