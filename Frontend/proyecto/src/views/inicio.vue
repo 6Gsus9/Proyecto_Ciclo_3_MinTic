@@ -10,7 +10,7 @@
                     assumenda quam consequatur voluptatem!</p>
                 <div b-container style="margin-left: 2cm;">
                     <a @click="llamarRegistro()"><button class="btn btn-primary" type="submit" >Registrarse</button></a>
-                    <a href="/HTML/Ingreso.html"><button type="button" class="btn btn-outline-secondary" > Ingresa</button></a>
+                    <router-link to="/login"><button type="button" class="btn btn-outline-secondary" > Ingresa </button></router-link>
                 </div>
                          
                 
@@ -96,7 +96,8 @@ export default {
   },
   methods:{
     llamarRegistro(){
-      this.$router.push('/registro')
+      this.$router.push('/registro');
+      console.log( this.$router.name )
     },
     onSlideStart(slide) {
         this.sliding = true

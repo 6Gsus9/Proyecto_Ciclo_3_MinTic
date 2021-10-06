@@ -19,7 +19,8 @@ export default {
   }),
   methods:{
     llamarRegistro(){
-      this.$router.push('/registro')
+      this.$router.push('/registro');
+      
     }
   }
 };
