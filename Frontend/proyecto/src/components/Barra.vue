@@ -1,6 +1,6 @@
 <template>
   <div >
-            <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                     <router-link to="/"><input class='icon' type="image" id="saveform" src="img/Logo.png" loading="lazy" width="50px"/></router-link>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,20 +31,9 @@
                                 </button>
                             </router-link>
                         </form>
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-1">
-                            <li class="nav-item mx-5 me-2">
-                                <router-link class="navbar-brand h1" to="/QS">Trabaja con
-                                nosotros </router-link>
-                            </li>
-                            <ul class="navbar-nav mx-5">
-                            <li class="nav-item mx-1">
-                                <router-link class="nav-link" to="/login"> <button type="button" class="btn btn-outline-primary me-2">Ingresa </button></router-link>
-                            </li>
-                            <li class="nav-item">
-                              <button type="button" class="btn btn-warning me-2" @click="llamarRegistro()">Registrate es gratis</button>
-                            </li>
-                            </ul>
-                        </ul>
+                        <router-link class="navbar-brand h1 mt-1 mx-5" to="/QS">Trabaja con nosotros </router-link>
+                        <router-link class="nav-link" to="/login"> <button type="button" class="btn btn-outline-primary me-2">Ingresa </button></router-link>
+                        <button type="button" class="btn btn-warning me-2" @click="llamarRegistro()">Registrate es gratis</button>
                     </div>
                 </div>
             </nav>
