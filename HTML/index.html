@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+        <link rel='shortcut icon' href='..\img\Logo.png' type='image/x-icon' sizes="16x16" />
+        <!-- ================== ESTILOS CSS ================== -->
+        <link href="../CSS/estilos.css" rel="stylesheet" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+        <!-- Google Fonts Roboto -->
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+        />
+        <!-- MDB -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">    
+
+        <!-- ================== SCRIPTS JS ================== -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- MDB -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+
+        <title>TuroriasWeb</title>
+    </head>
+    <body style="background-color: rgba(236, 236, 236, 0.733)">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../HTML/index.html">
+                        <input class='icon' type="image" id="saveform" src="../img/Logo.png" loading="lazy" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-1">
+                            <li class="nav-item mt-1 mx-5">
+                                <a class="navbar-brand h1" aria-current="page" href="../HTML\quienes_somos.html">Quienes
+                                somos</a>
+                            </li>
+                            <li class="nav-item dropdown mt-1 mx-5">
+                                <a class="navbar-brand dropdown-toggle h1" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    Cómo funciona
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../HTML\Listado_de_cursos.html">Agendar una tutoria</a></li>
+                                    <li><a class="dropdown-item" href="../HTML\Listado_de_cursos.html">Cambiar el horario de la tutoria</a></li>
+                                    <li><a class="dropdown-item" href="../HTML\Listado_de_cursos.html">Realizar la subscripción</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="form-inline d-flex mx-5 mt-1">
+                            <input class="form-control me-2" type="search" placeholder="¿Qué deseas aprender?" aria-label="Search" style="width:450px;">
+                            <a href="../HTML\Listado_de_cursos.html">
+                                <button type="button" class="btn btn-primary">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </a>
+                        </form>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-1">
+                            <li class="nav-item mx-5 me-2">
+                                <a class="navbar-brand h1" aria-current="page" href="../HTML\regitro_tutores.html"> Trabaja con
+                                nosotros </a>
+                            </li>
+                            <ul class="navbar-nav mx-5">
+                            <li class="nav-item mx-1">
+                                <a href="../HTML\Ingreso.html"> 
+                                    <button type="button" class="btn btn-outline-primary me-2">Ingresa </button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../HTML\regitro_estudiante.html">
+                                    <button type="button" class="btn btn-warning me-2">Registrate es gratis</button>
+                                </a>
+                            </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <div class="row" style="position: absolute; margin-top: 4cm;">
+                    <div class="col-5" >
+                        <h1>TutoWeb</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque consectetur iure magni adipisci
+                            minus inventore voluptatem voluptas ad recusandae dignissimos tenetur quia quaerat ducimus
+                            aspernatur, libero quis voluptate necessitatibus tempore praesentium! Necessitatibus pariatur aut
+                            consectetur minus ducimus architecto mollitia labore, libero, quo aliquid perspiciatis dolor autem
+                            assumenda quam consequatur voluptatem!</p>
+                        <div class="container" style="margin-left: 2cm;">
+                            <a href="../HTML/regitro_estudiante.html"><button class="btn btn-primary" type="submit" >Registrarse</button></a>
+                            <a href="../HTML/Ingreso.html"><button type="button" class="btn btn-outline-secondary" > Ingresa</button></a>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            
+                        </div>
+                        <div class="form-check form-check-inline" style="margin-top: 1cm;">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
+                            
+                        </div>               
+                        
+                    </div>
+
+                    <div class="col-2"></div>
+                    <div class="col-5" >
+                        <img id = "imagen" src="../img/principal.jpg" alt="imagen" width="400" >
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script type="text/javascript"></script>
+    </body>
+</html>
