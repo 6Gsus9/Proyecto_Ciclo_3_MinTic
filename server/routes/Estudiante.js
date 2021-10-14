@@ -1,8 +1,11 @@
-import express from 'express';
-const router=express.Router();
+const express = require("express");
+//import express from 'express';
+const router = express.Router();
+const Estudiantes = require('../models/Estudiante');
+//import Estudiantes from '../models/Estudiante';
+const Cursos = require('../models/Cursos');
+//import Cursos from '../models/Cursos'
 
-import Estudiantes from '../models/Estudiante';
-import Cursos from '../models/Cursos'
 //Agregar un curso
 router.post('/asignacion-curso', async(req,res)=>{
 
@@ -10,6 +13,8 @@ router.post('/asignacion-curso', async(req,res)=>{
 
     try{
         const CursoDB = await Cursos.create(body);
+        const id = Cursos._id;
+        console.log(id);
         res.status(200).json(CursoDB)
     }catch(error){
         return res.status(500).json({
@@ -18,6 +23,7 @@ router.post('/asignacion-curso', async(req,res)=>{
         })
     }
 });
+// ver listado de cursos
 router.get('/Cursos', async(req,res)=>{
     try {
         const CursoDB = await Cursos.find();
@@ -28,6 +34,7 @@ router.get('/Cursos', async(req,res)=>{
             error
         })
     }
+    
 });
 router.get('/Cursos/:id', async(req, res)=> {
     const _id=req.params.id;
@@ -42,6 +49,7 @@ router.get('/Cursos/:id', async(req, res)=> {
         })
     }
 });
+
 router.delete('/Cursos/:id',async(req,res)=>{
     const _id = req.params.id;
     const body = req.body;
@@ -110,16 +118,22 @@ router.get('/Estudiante/:id', async(req, res)=> {
     }
 });
 
-router.get('/Estudiante', async(req,res)=>{
+/* router.get('/Estudiante', async(req,res)=>{
     try {
         const notaDB = await Estudiantes.find();
         res.json(notaDB);
     } catch (error) {
         return res.status(500).json({
-            menssage: 'Ocurrio un error',
+            menssage: 'Ocurrio un error con el listado de estuadiantes',
             error
         })
     }
+});
+*/
+router.route("/ListadoEstudiantes").get((req,res) => {
+    Estudiantes.find((Error, data) =>{
+        res.json(data);
+    });
 });
 
 router.delete('/Estudiante/:id',async(req,res)=>{

@@ -1,39 +1,10 @@
 <template>
     <div class="container">
-        <table class="table table-striped" >
-  <thead>
-    <tr>
-      <!-- <th scope="col">ID</th> -->
-      <th scope="col">Nombre</th>
-      <th scope="col">Fecha</th>
-      <th scope="col">Hora de Inicio</th>
-      <th scope="col">Hora De Finalización</th>
-      <th scope="col">Activo</th>
-      <th scope="col">Accciones</th>
-      
-    
-    </tr>
-  </thead>
-  <tbody>
-    <tr v-for="(item, index) in classes" :key="index">
-      <!-- <th scope="row"> {{item._id}} </th> -->
-      <td>{{item.ClassName}}</td>
-      <td>{{item.ClassDate}}</td>
-      <td>{{item.ClassInit}}</td>
-      <td>{{item.ClassEnd}}</td>
-      <td>{{item.active}}</td>
-      <td> <button @click="deleteClass(item._id)">ELiminar</button></td>
-      <td><button @click="editClass(item._id)">Editar</button></td>
-    </tr>
-    
-  </tbody>
-</table>
-
     <div class="row col-12 d-flex " v-if="editar">
         <h3 class="text-center">Progrma tu tutoría</h3>
         <div class="container col-12 d-flex justify-content-center">
             <div class="col-4">
-                <form @submit.prevent="UpdateClass(Tutoria)"  v-if="editar">
+                <form @submit.prevent="UpdateClass(Tutoria)">
                     
                     <div class="form-group mt-2">
                         <label class="form-label" for="Classname">Nombre del curso</label>
@@ -81,61 +52,14 @@
 export default {
     data(){
         return{
-            classes:[],
-            editar:false,
-            Tutoria: {},
-            
+            Tutoria: {}, 
         }
     },
     created(){
-        setTimeout(this.ClassList(),10000);
+        this.UpdateClass();
     },
     methods:{
-        ClassList(){
-            this.axios.get('/Cursos').then(res=>{
-                
-                this.classes=res.data;
-            }).catch(e=>{
-                console.log(e.response)
-            })
-            this.axios.get('/Cursos').then(res=>{
-                
-                this.classes=res.data;
-            }).catch(e=>{
-                console.log(e.response)
-            })
-            this.axios.get('/Cursos').then(res=>{
-                
-                this.classes=res.data;
-            }).catch(e=>{
-                console.log(e.response)
-            })
-        },
-        deleteClass(id){
-            this.axios.delete(`/Cursos/${id}`)
-            .then(res=>{
-
-                const index= this.classes.findIndex(item=>item._id===res.data._id);
-                this.classes.splice(index,1);
-            }).catch(e=>{
-                console.log(e.response)
-            })
-        },
-        editClass(id){
-            this.editar=true;
-            this.axios.get(`/Cursos/${id}`)
-            .then(res=>{
-                this.Tutoria=res.data;
-                
-            })
-            .catch(e=>{
-                console.log(e.response)
-                });
-            
-        },
-        UpdateClass(item){
-            
-            
+            UpdateClass(item){
             console.log(item.ClassName);
             
             this.axios.put(`/Cursos/${item._id}`, item).then(res=>{
@@ -148,13 +72,7 @@ export default {
             }).catch(e=>{
                 console.log(e.response)
             });
-            this.editar=false;
-            
         },
-        reeditClass(){
-            
-            this.editar=false;
-        }
     }
 }
 </script>

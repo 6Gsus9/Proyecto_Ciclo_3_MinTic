@@ -1,7 +1,8 @@
-import Mongoose from "mongoose";
-const Schema = Mongoose.Schema;
+//import Mongoose from "mongoose";
+const mongoose = require("mongoose");
+const schema = mongoose.Schema;
 
-const EstudianteSchema = new Schema({
+let EstudianteSchema = new schema({
     Nombres:{type: String, require:[true, 'Nombre Obligatorio']},
     Apellidos:{type: String, require:[true, 'Nombre Obligatorio']},
     Documento:{type: String, require:[true, 'Nombre Obligatorio']},
@@ -18,8 +19,8 @@ const EstudianteSchema = new Schema({
 
 //Convertir a modelo
 
-const Estudiantes= Mongoose.model('Estudiantes',EstudianteSchema)
+module.exports = mongoose.model('Estudiantes',EstudianteSchema)
 
-export default Estudiantes;
+//export default Estudiantes;
 
 

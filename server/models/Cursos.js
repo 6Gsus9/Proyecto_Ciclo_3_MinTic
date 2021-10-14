@@ -1,4 +1,5 @@
-import Mongoose from "mongoose";
+//import Mongoose from "mongoose";
+const Mongoose = require("mongoose");
 const Schema = Mongoose.Schema;
 
 
@@ -15,7 +16,7 @@ const cursosSchema = new Schema({
 // schema de clases programadas
 // nombreCurso, fecha, Hora Inicio, hora Final
 
-const Cursos= Mongoose.model('Cursos',cursosSchema)
+module.exports = Mongoose.model('Cursos',cursosSchema)
 
 
-export default Cursos;
+// export default Cursos;

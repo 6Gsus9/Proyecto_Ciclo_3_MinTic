@@ -92,7 +92,7 @@ export default {
     },
         agregarEstudiante(){
             
-            this.axios.post('/Estudiante-nuevo',this.atributos)
+            this.axios.post('https://tutoriasweb.herokuapp.com/api/Estudiante-nuevo',this.atributos)
             .then(res=>{
                 this.atributos.push(res.atributos);
                 

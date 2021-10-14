@@ -39,7 +39,7 @@
                         <label class="form-check-label" for="recordar">Accepto los terminos y condicones</label>
                     </div>
                     <div class="form-group mt-2">
-                        <button type="submit" class="btn btn-primary btn-block" @click="handleSubmitForm()">Programar la clase</button>
+                        <button type="submit" class="btn btn-primary btn-block">Programar la clase</button>
                     </div>
                     <router-link class="navbar-link mt-2" to="/QS">Conoce como funcionan las totorias</router-link>
                 </form>
@@ -57,26 +57,28 @@
                     ClassDate:Date(),
                     ClassInit:Date(),
                     ClassEnd:Date(),
-
                 },
             };
         },
         methods: {
+            VerCurso(id){
+               this.$router.push('/Clases-Pendientes')
+            },
             handleSubmitForm() {
                 console.log(this.Tutoria)
             },
             AddCurso(){
-            
-            this.axios.post('/asignacion-curso',this.Tutoria)
+            let id = 0;
+            this.axios.post('https://tutoriasweb.herokuapp.com/api/asignacion-curso',this.Tutoria)
             .then(res=>{
                 this.Tutoria.push(res.Tutoria);
-                
-                
-
+                this.Tutoria.getId();
             })
             .catch((e)=>{
                 console.log(e.response)
             });
+            this.VerCurso()
+            
             }
         },
     };
